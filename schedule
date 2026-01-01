@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Kyushu Travel 2026</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&family=Zen+Kaku+Gothic+New:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'muji-beige': '#D4C2AD',
+                        'muji-sand': '#EFDFCC',
+                        'muji-terracotta': '#D7A184',
+                        'muji-brown': '#BA8E7A',
+                        'muji-green': '#66796B',
+                        'muji-bg': '#F9F7F2'
+                    },
+                    fontFamily: {
+                        sans: ['Zen Kaku Gothic New', 'Noto Sans TC', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { background-color: #F9F7F2; color: #4A4A4A; -webkit-tap-highlight-color: transparent; }
+        .tab-content { display: none; }
+        .tab-content.active { display: block; }
+        .glass-card { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.3); }
+        .safe-area-bottom { padding-bottom: env(safe-area-inset-bottom); }
+        .hide-scrollbar::-webkit-scrollbar { display: none; }
+        .btn-active { color: #BA8E7A; }
+    </style>
+</head>
+<body class="font-sans mb-24">
+
+    <header class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-muji-beige/30 p-4">
+        <div class="flex justify-between items-center">
+            <div>
+                <h1 class="text-xl font-bold tracking-widest text-muji-brown">KYUSHU '26</h1>
+                <p class="text-xs text-gray-500">2026.02.11 - 02.17</p>
+            </div>
+            <div id="weather-badge" class="text-xs bg-muji-sand px-3 py-1 rounded-full text-muji-green">
+                <i class="fas fa-plane-departure mr-1"></i> 福岡行
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-md mx-auto p-4">
+
+        <section id="plan" class="tab-content active space-y-6">
+            <div class="bg-muji-green text-white p-4 rounded-3xl shadow-sm">
+                <div class="flex justify-between items-center mb-2">
+                    <span class="text-xs font-bold uppercase tracking-widest">Flight Info</span>
+                    <i class="fas fa-ticket-alt"></i>
+                </div>
+                <div class="flex justify-between items-center border-b border-white/20 pb-2 mb-2">
+                    <div class="text-left">
+                        <p class="text-lg font-bold">TPE</p>
+                        <p class="text-[10px] opacity-80">2/11 16:25</p>
+                    </div>
+                    <div class="text-center flex-1">
+                        <div class="text-xs opacity-60">CI116</div>
+                        <div class="h-[1px] bg-white/40 w-full relative">
+                            <i class="fas fa-plane absolute -top-2 left-1/2 -translate-x-1/2 text-[10px]"></i>
+                        </div>
+                    </div>
+                    <div class="text-right">
+                        <p class="text-lg font-bold">FUK</p>
+                        <p class="text-[10px] opacity-80">19:35</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="space-y-8 relative before:content-[''] before:absolute before:left-4 before:top-2 before:bottom-0 before:w-[1px] before:bg-muji-beige/50">
+                
+                <div class="relative pl-10">
+                    <div class="absolute left-2.5 top-1.5 w-3 h-3 rounded-full bg-muji-terracotta ring-4 ring-muji-sand"></div>
+                    <h3 class="font-bold text-lg text-muji-brown mb-2">Day 1 | 2/11 (三) 啟程</h3>
+                    <div class="space-y-3">
+                        <div class="glass-card p-4 rounded-2xl shadow-sm">
+                            <p class="text-xs font-bold text-muji-green">19:35 入境福岡</p>
+                            <p class="text-sm mt-1">前往飯店 Check-in</p>
+                            <div class="mt-2 flex gap-2">
+                                <a href="https://maps.google.com/?q=Hotel+Monterey+La+Soeur+Fukuoka" class="text-xs bg-white border border-muji-beige px-3 py-1 rounded-full"><i class="fas fa-hotel mr-1"></i>蒙特利拉蘇瑞</a>
+                            </div>
+                        </div>
+                        <div class="glass-card p-4 rounded-2xl shadow-sm">
+                            <p class="text-xs font-bold text-muji-green">晚餐：親不孝通餃子</p>
+                            <div class="mt-2 flex flex-wrap gap-2">
+                                <a href="https://maps.app.goo.gl/yH8GvS6K5L5Uu9mF7" class="text-xs bg-muji-sand px-3 py-1 rounded-full">餃子のかっちゃん</a>
+                                <a href="https://maps.app.goo.gl/5q5U9nBfC6wXfB3k7" class="text-xs bg-muji-sand px-3 py-1 rounded-full">博多一口餃子 たけとら</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="relative pl-10">
+                    <div class="absolute left-2.5 top-1.5 w-3 h-3 rounded-full bg-muji-terracotta ring-4 ring-muji-sand"></div>
+                    <h3 class="font-bold text-lg text-muji-brown mb-2">Day 2 | 2/12 (四) 福岡市區</h3>
+                    <div class="space-y-3 text-sm">
+                        <div class="glass-card p-4 rounded-2xl shadow-sm">
+                            <p class="font-bold text-muji-green">麵包超人博物館 (5-6F)</p>
+                            <p class="text-xs text-gray-500 mb-2">適合小孩配合表演時刻</p>
+                            <p class="font-bold text-muji-green mt-2">TeamLab Forest & E・ZO</p>
+                            <p class="text-xs text-gray-500">4F 王貞治 / 5F TeamLab / 6-7F V-World</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="relative pl-10">
+                    <div class="absolute left-2.5 top-1.5 w-3 h-3 rounded-full bg-muji-brown ring-4 ring-muji-sand"></div>
+                    <h3 class="font-bold text-lg text-muji-brown mb-2">Day 3 | 2/13 (五) 採草莓・自駕</h3>
+                    <div class="space-y-3">
+                        <div class="bg-red-50 p-4 rounded-2xl border border-red-100">
+                            <p class="text-xs font-bold text-red-600">重要集合 11:00</p>
+                            <p class="text-sm font-bold">取車：指定取車點</p>
+                        </div>
+                        <div class="glass-card p-4 rounded-2xl shadow-sm">
+                            <p class="text-sm font-bold">行程：春光園採草莓 → 檪之丘 Pizza</p>
+                            <p class="text-xs text-gray-500">注意：檪之丘最晚 14:30 抵達</p>
+                            <div class="mt-2">
+                                <span class="text-xs bg-muji-green text-white px-2 py-1 rounded">宿：TERRA Yufuin</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <p class="text-center text-xs text-gray-400">... 更多行程請點選 GUIDE 查看詳情 ...</p>
+            </div>
+        </section>
+
+        <section id="guide" class="tab-content space-y-6">
+            <h2 class="text-2xl font-bold text-muji-brown border-b border-muji-beige pb-2">深度導覽</h2>
+            
+            <article class="bg-white p-6 rounded-3xl shadow-sm space-y-4">
+                <div class="aspect-video bg-gray-200 rounded-2xl overflow-hidden relative">
+                    <iframe class="w-full h-full border-0" src="https://www.openstreetmap.org/export/embed.html?bbox=131.32,33.22,131.38,33.27&layer=mapnik"></iframe>
+                </div>
+                <h3 class="text-xl font-bold text-muji-green">由布院・TERRA Yufuin</h3>
+                <p class="text-sm leading-relaxed text-gray-600">
+                    由布院溫泉是日本受歡迎的避暑勝地。**TERRA Yufuin** 提供極致的寧靜，適合家庭在超市採買食材後，於民宿內享受自行料理的樂趣。別忘了在下午散步時去 **豆柴咖啡** 或是前往 **ドラッグストア コスモス** 補給。
+                </p>
+                <div class="bg-muji-sand/50 p-4 rounded-xl text-xs space-y-1 text-muji-brown">
+                    <p>● 門票資訊：地獄巡禮建議選海地獄與灶地獄即可。</p>
+                    <p>● 小知識：由布岳又被稱為「豐後富士」，景色優美。</p>
+                </div>
+            </article>
+
+            <article class="bg-white p-6 rounded-3xl shadow-sm space-y-4 border-l-4 border-muji-terracotta">
+                <h3 class="text-xl font-bold text-muji-brown">九州自然動物園 (African Safari)</h3>
+                <p class="text-sm leading-relaxed text-gray-600">
+                    這是日本最大的野生動物園之一。**必做推薦：** 搭乘叢林巴士（Jungle Bus）親手餵食獅子、大象。
+                </p>
+                <div class="p-3 bg-red-50 text-red-700 rounded-lg text-xs font-bold">
+                    提醒：餵食巴士票券極難買，建議一開園即抵達現場排隊。
+                </div>
+            </article>
+        </section>
+
+        <section id="wallet" class="tab-content space-y-6">
+            <div class="bg-white p-6 rounded-3xl shadow-sm border border-muji-beige">
+                <h3 class="text-sm font-bold text-muji-brown mb-4"><i class="fas fa-calculator mr-2"></i>即時匯率換算</h3>
+                <div class="space-y-4">
+                    <div>
+                        <label class="text-[10px] uppercase tracking-widest text-gray-400">JPY Amount / Expression (e.g. 500+200*3)</label>
+                        <input type="text" id="calc-input" placeholder="0" class="w-full text-2xl font-bold bg-transparent border-b border-muji-beige focus:outline-none py-2">
+                    </div>
+                    <div class="flex justify-between items-center bg-muji-sand/30 p-3 rounded-xl">
+                        <span class="text-xs text-gray-500">匯率 (1 JPY = ?)</span>
+                        <input type="number" id="exchange-rate" value="0.21" step="0.001" class="w-20 text-right bg-transparent font-bold text-muji-green">
+                    </div>
+                    <div class="text-right">
+                        <p class="text-[10px] text-gray-400 uppercase">Estimated TWD</p>
+                        <p id="twd-result" class="text-3xl font-bold text-muji-terracotta">≈ $ 0</p>
+                    </div>
+                    <button onclick="calculateTWD()" class="w-full bg-muji-brown text-white py-3 rounded-2xl font-bold shadow-md active:scale-95 transition-transform">計算與換算</button>
+                </div>
+            </div>
+
+            <div class="space-y-4">
+                <div class="flex justify-between items-center">
+                    <h3 class="font-bold text-muji-brown">消費紀錄</h3>
+                    <button onclick="toggleRecordModal()" class="text-xs bg-muji-green text-white px-4 py-2 rounded-full">+ 新增紀錄</button>
+                </div>
+                
+                <div id="expense-list" class="space-y-3">
+                    </div>
+            </div>
+        </section>
+
+        <section id="lists" class="tab-content space-y-6">
+            <div class="bg-white p-6 rounded-3xl shadow-sm">
+                <h3 class="font-bold text-muji-brown mb-4">行前準備 CheckList</h3>
+                <div id="checklist-container" class="space-y-3">
+                    </div>
+            </div>
+
+            <div class="bg-white p-6 rounded-3xl shadow-sm">
+                <h3 class="font-bold text-muji-brown mb-4">個人備忘錄</h3>
+                <textarea id="memo-input" placeholder="輸入筆記內容，網址會自動轉為按鈕..." class="w-full h-32 p-3 text-sm bg-muji-sand/20 rounded-xl focus:outline-none border border-transparent focus:border-muji-beige"></textarea>
+                <div id="memo-links" class="mt-3 flex flex-wrap gap-2"></div>
+                <button onclick="saveMemo()" class="mt-2 w-full bg-muji-beige text-white py-2 rounded-xl text-sm font-bold">儲存備忘錄</button>
+            </div>
+        </section>
+
+        <section id="info" class="tab-content space-y-6">
+            <div class="bg-white p-6 rounded-3xl shadow-sm">
+                <h3 class="font-bold text-muji-brown mb-4">實用資訊</h3>
+                <div class="grid grid-cols-2 gap-4">
+                    <a href="https://www.jma.go.jp/bosai/nw/#&area_code=400000" class="p-4 bg-muji-sand/30 rounded-2xl text-center">
+                        <i class="fas fa-cloud-sun text-2xl text-muji-green mb-2"></i>
+                        <p class="text-xs font-bold">福岡天氣預報</p>
+                    </a>
+                    <a href="https://www.tenki.jp" class="p-4 bg-muji-sand/30 rounded-2xl text-center">
+                        <i class="fas fa-umbrella text-2xl text-muji-green mb-2"></i>
+                        <p class="text-xs font-bold">日本氣象協會</p>
+                    </a>
+                </div>
+            </div>
+
+            <div class="bg-muji-terracotta/10 p-6 rounded-3xl border border-muji-terracotta/20">
+                <h3 class="font-bold text-muji-terracotta mb-3">緊急聯絡</h3>
+                <div class="text-sm space-y-2">
+                    <div class="flex justify-between"><span>警察局</span><span class="font-bold">110</span></div>
+                    <div class="flex justify-between"><span>救護車</span><span class="font-bold">119</span></div>
+                    <div class="flex justify-between"><span>外交部緊急求助</span><span class="font-bold">+81-90-1922-8940</span></div>
+                </div>
+            </div>
+
+            <div class="bg-gray-100 p-6 rounded-3xl">
+                <h3 class="font-bold text-gray-700 mb-2 text-sm uppercase">旅遊禁忌與注意</h3>
+                <ul class="text-xs text-gray-500 space-y-2 list-disc pl-4">
+                    <li>日本全面禁菸，請至指定吸菸區。</li>
+                    <li>入內收費設施通常需脫鞋。</li>
+                    <li>自駕注意：路邊不可隨意停車，請找有料停車場。</li>
+                    <li>出入境禁止攜帶肉類製品（含加工品）。</li>
+                </ul>
+            </div>
+        </section>
+
+    </main>
+
+    <nav class="fixed bottom-0 left-0 right-0 bg-white/90 backdrop-blur-lg border-t border-muji-beige/30 p-2 safe-area-bottom shadow-[0_-5px_20px_rgba(0,0,0,0.05)]">
+        <div class="max-w-md mx-auto flex justify-around items-center">
+            <button onclick="switchTab('plan')" class="nav-btn p-2 flex flex-col items-center btn-active" data-id="plan">
+                <i class="fas fa-calendar-alt text-lg"></i>
+                <span class="text-[10px] mt-1 font-bold">PLAN</span>
+            </button>
+            <button onclick="switchTab('guide')" class="nav-btn p-2 flex flex-col items-center text-gray-400" data-id="guide">
+                <i class="fas fa-map-marked-alt text-lg"></i>
+                <span class="text-[10px] mt-1 font-bold">GUIDE</span>
+            </button>
+            <button onclick="switchTab('wallet')" class="nav-btn p-2 flex flex-col items-center text-gray-400" data-id="wallet">
+                <i class="fas fa-wallet text-lg"></i>
+                <span class="text-[10px] mt-1 font-bold">WALLET</span>
+            </button>
+            <button onclick="switchTab('lists')" class="nav-btn p-2 flex flex-col items-center text-gray-400" data-id="lists">
+                <i class="fas fa-tasks text-lg"></i>
+                <span class="text-[10px] mt-1 font-bold">LISTS</span>
+            </button>
+            <button onclick="switchTab('info')" class="nav-btn p-2 flex flex-col items-center text-gray-400" data-id="info">
+                <i class="fas fa-info-circle text-lg"></i>
+                <span class="text-[10px] mt-1 font-bold">INFO</span>
+            </button>
+        </div>
+    </nav>
+
+    <div id="modal-expense" class="fixed inset-0 z-[100] hidden bg-black/50 flex items-end justify-center">
+        <div class="bg-white w-full max-w-md rounded-t-[2.5rem] p-8 space-y-4 animate-slide-up">
+            <div class="flex justify-between items-center mb-2">
+                <h2 class="text-xl font-bold">新增記帳</h2>
+                <button onclick="toggleRecordModal()" class="text-gray-400"><i class="fas fa-times"></i></button>
+            </div>
+            <input type="text" id="exp-item" placeholder="品項名稱 (如：一蘭拉麵)" class="w-full p-3 bg-gray-100 rounded-xl focus:outline-none">
+            <input type="number" id="exp-amount" placeholder="日幣金額" class="w-full p-3 bg-gray-100 rounded-xl focus:outline-none">
+            
+            <div class="flex items-center gap-4">
+                <label class="flex-1 cursor-pointer bg-muji-sand text-muji-brown py-3 rounded-xl text-center text-sm font-bold">
+                    <i class="fas fa-camera mr-2"></i>拍照/上傳
+                    <input type="file" id="exp-photo" accept="image/*" class="hidden" onchange="handleImageUpload(event)">
+                </label>
+                <div id="photo-preview" class="w-12 h-12 bg-gray-200 rounded-lg hidden bg-cover bg-center"></div>
+            </div>
+
+            <button onclick="saveExpense()" class="w-full bg-muji-green text-white py-4 rounded-2xl font-bold shadow-lg">確認儲存</button>
+        </div>
+    </div>
+
+    <script>
+        // --- Tab Logic ---
+        function switchTab(tabId) {
+            document.querySelectorAll('.tab-content').forEach(el => el.classList.remove('active'));
+            document.querySelectorAll('.nav-btn').forEach(el => el.classList.remove('btn-active', 'text-gray-400'));
+            document.querySelectorAll('.nav-btn').forEach(el => {
+                if(el.dataset.id === tabId) el.classList.add('btn-active');
+                else el.classList.add('text-gray-400');
+            });
+            document.getElementById(tabId).classList.add('active');
+            window.scrollTo(0, 0);
+        }
+
+        // --- Wallet & Calculator ---
+        function calculateTWD() {
+            const input = document.getElementById('calc-input').value;
+            const rate = parseFloat(document.getElementById('exchange-rate').value) || 0;
+            try {
+                // 安全評估數學算式
+                const jpyAmount = eval(input.replace(/[^-()\d/*+.]/g, '')) || 0;
+                const twd = Math.round(jpyAmount * rate);
+                document.getElementById('twd-result').innerText = `≈ $ ${twd.toLocaleString()}`;
+                return { jpy: jpyAmount, twd: twd };
+            } catch (e) {
+                alert("輸入算式有誤，請再檢查一次");
+                return null;
+            }
+        }
+
+        // --- Expense System ---
+        let currentBase64 = "";
+
+        function toggleRecordModal() {
+            const modal = document.getElementById('modal-expense');
+            modal.classList.toggle('hidden');
+            currentBase64 = "";
+            document.getElementById('photo-preview').classList.add('hidden');
+        }
+
+        function handleImageUpload(event) {
+            const file = event.target.files[0];
+            if (!file) return;
+
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                const img = new Image();
+                img.onload = function() {
+                    const canvas = document.createElement('canvas');
+                    const MAX_WIDTH = 200;
+                    const scale = MAX_WIDTH / img.width;
+                    canvas.width = MAX_WIDTH;
+                    canvas.height = img.height * scale;
+                    const ctx = canvas.getContext('2d');
+                    ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
+                    currentBase64 = canvas.toDataURL('image/jpeg', 0.7);
+                    
+                    const preview = document.getElementById('photo-preview');
+                    preview.style.backgroundImage = `url(${currentBase64})`;
+                    preview.classList.remove('hidden');
+                };
+                img.src = e.target.result;
+            };
+            reader.readAsDataURL(file);
+        }
+
+        function saveExpense() {
+            const item = document.getElementById('exp-item').value;
+            const jpy = document.getElementById('exp-amount').value;
+            if(!item || !jpy) return alert("請輸入完整資訊");
+
+            const rate = parseFloat(document.getElementById('exchange-rate').value);
+            const expense = {
+                id: Date.now(),
+                item,
+                jpy: parseFloat(jpy),
+                twd: Math.round(jpy * rate),
+                photo: currentBase64,
+                date: new Date().toLocaleDateString()
+            };
+
+            const history = JSON.parse(localStorage.getItem('travel_expenses') || '[]');
+            history.unshift(expense);
+            localStorage.setItem('travel_expenses', JSON.stringify(history));
+            
+            renderExpenses();
+            toggleRecordModal();
+            document.getElementById('exp-item').value = "";
+            document.getElementById('exp-amount').value = "";
+        }
+
+        function renderExpenses() {
+            const history = JSON.parse(localStorage.getItem('travel_expenses') || '[]');
+            const container = document.getElementById('expense-list');
+            container.innerHTML = history.map(ex => `
+                <div class="bg-white p-3 rounded-2xl flex items-center gap-3 shadow-sm border border-muji-beige/20">
+                    ${ex.photo ? `<div class="w-12 h-12 rounded-lg bg-cover bg-center" style="background-image:url(${ex.photo})"></div>` : `<div class="w-12 h-12 rounded-lg bg-muji-sand flex items-center justify-center text-muji-brown"><i class="fas fa-receipt"></i></div>`}
+                    <div class="flex-1">
+                        <p class="text-sm font-bold">${ex.item}</p>
+                        <p class="text-[10px] text-gray-400">${ex.date}</p>
+                    </div>
+                    <div class="text-right">
+                        <p class="text-sm font-bold text-muji-brown">¥${ex.jpy.toLocaleString()}</p>
+                        <p class="text-[10px] text-gray-400">NT$ ${ex.twd.toLocaleString()}</p>
+                    </div>
+                    <button onclick="deleteExpense(${ex.id})" class="text-gray-300 ml-2"><i class="fas fa-trash-alt text-xs"></i></button>
+                </div>
+            `).join('');
+        }
+
+        function deleteExpense(id) {
+            let history = JSON.parse(localStorage.getItem('travel_expenses') || '[]');
+            history = history.filter(ex => ex.id !== id);
+            localStorage.setItem('travel_expenses', JSON.stringify(history));
+            renderExpenses();
+        }
+
+        // --- Checklist & Memo ---
+        const defaultChecklist = ['護照', '網卡', '推車', '行李', '日幣現鈔', '駕照譯本', '保險證明'];
+        
+        function initChecklist() {
+            let list = JSON.parse(localStorage.getItem('travel_checklist'));
+            if(!list) list = defaultChecklist.map(name => ({name, checked: false}));
+            
+            const container = document.getElementById('checklist-container');
+            container.innerHTML = list.map((item, idx) => `
+                <div class="flex items-center gap-3">
+                    <input type="checkbox" ${item.checked ? 'checked' : ''} onchange="toggleCheck(${idx})" class="w-5 h-5 accent-muji-green">
+                    <span class="${item.checked ? 'line-through text-gray-400' : ''} text-sm">${item.name}</span>
+                </div>
+            `).join('');
+            localStorage.setItem('travel_checklist', JSON.stringify(list));
+        }
+
+        function toggleCheck(idx) {
+            const list = JSON.parse(localStorage.getItem('travel_checklist'));
+            list[idx].checked = !list[idx].checked;
+            localStorage.setItem('travel_checklist', JSON.stringify(list));
+            initChecklist();
+        }
+
+        function saveMemo() {
+            const val = document.getElementById('memo-input').value;
+            localStorage.setItem('travel_memo', val);
+            parseMemoLinks(val);
+        }
+
+        function parseMemoLinks(text) {
+            const urlRegex = /(https?:\/\/[^\s]+)/g;
+            const links = text.match(urlRegex) || [];
+            const container = document.getElementById('memo-links');
+            container.innerHTML = links.map(url => `
+                <a href="${url}" target="_blank" class="bg-muji-green text-white text-[10px] px-3 py-1 rounded-full"><i class="fas fa-external-link-alt mr-1"></i>開啟連結</a>
+            `).join('');
+        }
+
+        // Initialize
+        window.onload = () => {
+            renderExpenses();
+            initChecklist();
+            const savedMemo = localStorage.getItem('travel_memo') || "";
+            document.getElementById('memo-input').value = savedMemo;
+            parseMemoLinks(savedMemo);
+        };
+    </script>
+
+    <style>
+        @keyframes slide-up {
+            from { transform: translateY(100%); }
+            to { transform: translateY(0); }
+        }
+        .animate-slide-up { animation: slide-up 0.3s ease-out; }
+    </style>
+</body>
+</html>
